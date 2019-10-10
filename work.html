@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>KWABE portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-nav">
+                <div class="header-bland">
+                    <a href="./index.html"><span>O</span>rientado</a>
+                </div>
+                <div class="header-right">
+                    <ul>
+                        <li class="header-item"><a href="./index.html">home</a></li>
+                        <li class="header-item"><a href="./skill.html">skill</a></li>
+                        <li class="header-item"><a href="./work.html">work</a></li>
+                        <li class="header-item"><a href="./about.html">about</a></li>
+                        <li class="header-item"><a href="./contact.html">contact</a></li>
+                        <li><a href="http://twitter.com/Orientado2"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sp-nav">
+                <div class="header-bland">
+                    <a href="./index.html"><span>O</span>rientado</a>
+                </div>
+                <nav class="sp-header-right">
+                    <ul>
+                        <li class="sp-header-item"><a href="./index.html">home</a></li>
+                        <li class="sp-header-item"><a href="./skill.html">skill</a></li>
+                        <li class="sp-header-item"><a href="./work.html">work</a></li>
+                        <li class="sp-header-item"><a href="./about.html">about</a></li>
+                        <li class="sp-header-item"><a href="./contact.html">contact</a></li>
+                        <li class="sp-header-item"><a href="http://twitter.com/Orientado2"><i class="fa fa-twitter-square" aria-hidden="true"></i>twitter</a></li>
+                    </ul>
+                </nav>
+                 <div class="toggle">
+                　　<span></span>
+                　　<span></span>
+                　　<span></span>
+                </div>
+            </div>
+            
+        </header>
+        <div class="section-page">
+            <div class="section-container text-center">
+                <div class="section-title">
+                    <h2>workl</h2>
+                </div>
+                <div class="container flex">
+                    <div class="work-box">
+                        <img class="work-img" src="./images/work-boot1.jpg">
+                        <h4>模写サイト</h4>
+                    </div>
+                    <div class="work-box">
+                        <img class="work-img" src="./images/work-boot2.jpg">
+                        <h4>模写サイト</h4>
+                    </div>
+                    <div class="work-box">
+                        <img class="work-img" src="./images/work-mosya1.jpg">
+                        <h4>模写サイト</h4>
+                    </div>
+                    <div class="work-box">
+                        <img class="work-img" src="./images/work-mosya2.jpg">
+                        <h4>模写サイト</h4>
+                    </div>
+                    <div class="work-box">
+                        <img class="work-img" src="./images/work-mosya3.jpg">
+                        <h4>課題サイト</h4>
+                    </div>
+                    <div class="work-box">
+                        <img class="work-img" src="./images/work-kadai1.jpg">
+                        <h4>課題サイト</h4>
+                    </div>
+                    <div class="work-box">
+                        <img class="work-img" src="./images/work-kadai2.jpg">
+                        <h4>課題サイト</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container text-center">
+                <div class="footer-menu">
+                    <ul>
+                        <li class="footer-item"><a href="./index.html">home</a></li>
+                        <li class="footer-item"><a href="./skill.html">skill</a></li>
+                        <li class="footer-item"><a href="./work.html">work</a></li>
+                        <li class="footer-item"><a href="./about.html">about</a></li>
+                        <li class="footer-item"><a href="./contact.html">contact</a></li>
+                        <li><a href="http://twitter.com/Orientado2"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bland">
+                    <a href="./index.html">Orientado</a>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            $(function() {
+                $('.toggle').click(function() {
+                    $(this).toggleClass('active');
+             
+                    if ($(this).hasClass('active')) {
+                        $('.sp-header-right').addClass('active');
+                    } else {
+                        $('.sp-header-right').removeClass('active');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
